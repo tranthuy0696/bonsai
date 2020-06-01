@@ -1,0 +1,247 @@
+body {
+    font-family: 'Pontano Sans', sans-serif;
+}
+.main-header {
+    width: 100%;
+}
+.main-header .top-bar {
+    height: 50px;
+    background-color: #7fa159;
+    color: #fff;
+}
+.main-header .top-bar__row {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    height: 100%;
+    align-items: center;
+}
+.main-header .top-bar__row__right {
+    justify-self: flex-end;
+}
+.main-header .top-bar__row__right div:not(:last-child), .main-header .top-bar__row__left span:not(:last-child) {
+    padding-right: 25px;
+}
+.header-sticky-wrapper {
+    height: 150px;
+    background-color: #f6f6f6;
+}
+.header-sticky-wrapper__row {
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+.header-sticky-wrapper__row__logo {
+    width: 170px;
+}
+.header-sticky-wrapper__row__logo img{
+    width: 100%;
+}
+.header-sticky-wrapper__primary-menu__inner {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 100px;
+}
+.header-sticky-wrapper__primary-menu__inner__left {
+    justify-content: space-between;
+    margin: 0px 60px;
+}
+.header-sticky-wrapper__primary-menu__inner ul {
+    margin-bottom: 0;
+    padding: 0;
+}
+.header-sticky-wrapper__primary-menu__inner ul li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+/* display: inline; */
+}
+.header-sticky-wrapper__primary-menu__inner__right li.wishlist, 
+.header-sticky-wrapper__primary-menu__inner__right li.cart {
+    position: relative;
+}
+.header-sticky-wrapper__primary-menu__inner__right li.wishlist span, 
+.header-sticky-wrapper__primary-menu__inner__right li.cart span{
+    position: absolute;
+    margin: auto;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 13px;
+    font-weight: 700;
+    border-radius: 50%;
+    background-color: #7fa15a;
+    color: #fff;
+    top: -13px;
+    right: -13px;
+}
+.wrapper-content__primary__banner > .container {
+    max-width: 100%;
+}
+.wrapper-content__primary__banner__slide-left {
+    position: relative;
+}
+.wrapper-content__primary__banner__slide-left .title{
+    position: absolute;
+    top: 10%;
+    text-align: center;
+    left: 0;
+    right: 0;
+    font-size: 20px;
+}
+
+.wrapper-content__primary__banner__slide-left .title .main {
+    font-size: 50px;
+}
+.slide-01 .wrapper-content__primary__banner__slide-left .title{
+    color: #fff;
+    font-weight: bold;
+}
+.wrapper-content__primary__banner__slide-left img{
+    width: 100%;
+}
+.wrapper-content__primary__banner__right {
+    width: 100%;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+.wrapper-content__primary__banner__right__top, .wrapper-content__primary__banner__right__bottom {
+    width: 100%;
+    height: 50%;
+}
+.wrapper-content__primary__banner__right__top .bg-image{
+    background-image: url(https://lustria.g5plus.net/wp-content/uploads/2019/04/banner-05.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.wrapper-content__primary__banner__right__bottom .bg-image {
+    background: #f8f8f8 url(https://lustria.g5plus.net/wp-content/uploads/2018/12/banner-02.jpg?id=1277);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.wrapper-content__primary__product__tabs {
+    margin-top: 100px;
+}
+.wrapper-content__primary__product__tabs ul li {
+    list-style: none;
+    padding: 0 50px;
+    color: #C8C8C8;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.wrapper-content__primary__product__tabs ul li.active {
+    color: #333333;
+}
+.wrapper-content__primary__product__tabs ul li:not(:last-child) {
+    border-right: 1px solid #C8C8C8;
+}
+.wrapper-content__primary__product__list .product {
+    padding-bottom: 50px;
+}
+.wrapper-content__primary__product__list .product-image {
+    position: relative;
+    margin-bottom: 20px;
+}
+.wrapper-content__primary__product__list .product-info {
+    text-align: center;
+}
+.wrapper-content__primary__product__list .product-info .product-name{
+    font-size: 17px;
+}
+.wrapper-content__primary__product__list .product-info span {
+    font-weight: 700;
+}
+.wrapper-content__primary__product__list .product-info del span{
+    font-size: 16px;
+    color: #ababab;
+    margin-right: 5px;
+    opacity: 1;
+    font-weight: 500;
+}
+.wrapper-content__primary__product__list .product-image .product-flash-wrap {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+}
+.wrapper-content__primary__product__list .product-image:hover .product-action {
+    visibility: visible;
+    opacity: 1;
+}
+.wrapper-content__primary__product__list .product-image .product-action {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+.wrapper-content__primary__product__list .product-image .product-action > div{
+    width: 50px;
+    background-color: #fff;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3px;
+    transition: all 0.5s ease;
+}
+.wrapper-content__primary__product__list .product-image .product-action > div:hover{
+    background-color: #333333;
+    color: #fff;
+}
+
+.wrapper-content__primary__product__list .product-thumb {
+    width: 100%;
+}
+.wrapper-content__primary__product__list .product-flash {
+    width: 44px;
+    height: 44px;
+    background-color: #f0524b;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper-content__primary__product__list .on-featured {
+    background-color: #f5cc63;
+    margin-top: 5px;
+}
+.wrapper-content__primary__product__list .product-thumb img{
+    width: 100%;
+}
+#carouselExampleIndicators .carousel-indicators {
+    left: unset;
+    margin: 0;
+    background-color: #fff;
+    width: 60px;
+    align-items: center;
+}
+#carouselExampleIndicators .carousel-indicators li {
+    color: #000;
+    background-color: unset;
+    height: unset;
+    text-indent: unset;
+}
+#carouselExampleIndicators .carousel-indicators li:not(:last-child) {
+    border-bottom: 1px solid;
+}
+#carouselExampleIndicators .carousel-indicators li.active {
+    font-size: 30px;
+}
