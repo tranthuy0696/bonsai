@@ -25,6 +25,13 @@ body {
     height: 150px;
     background-color: #f6f6f6;
 }
+.fixed-sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+    height: 85px;
+}  
 .header-sticky-wrapper__row {
     height: 100%;
     display: grid;
@@ -89,6 +96,7 @@ body {
     left: 0;
     right: 0;
     font-size: 20px;
+    font-weight: bold;
 }
 
 .wrapper-content__primary__banner__slide-left .title .main {
@@ -96,7 +104,6 @@ body {
 }
 .slide-01 .wrapper-content__primary__banner__slide-left .title{
     color: #fff;
-    font-weight: bold;
 }
 .slide-01 .wrapper-content__primary__banner__slide-left img{
     animation: slide-fwd-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -351,4 +358,93 @@ body {
 }
 #carouselExampleIndicators .carousel-indicators li.active {
     font-size: 30px;
+}
+.wrapper-content__primary__catergory {
+    position: relative;
+}
+.wrapper-content__primary__catergory > a img {
+    width: 100%;
+}
+.wrapper-content__primary__catergory > a img.small {
+    height: 255px;
+}
+.wrapper-content__primary__catergory .btn-product-category {
+    position: absolute;
+    bottom: 60px;
+    /* left: 35%; */
+    font-size: 20px;
+    padding: 10px;
+    background: #fff;
+    text-align: center;
+    text-decoration: none;
+    color: #333333;
+}
+
+.wrapper-content__primary__catergory__right {
+    width: 100%;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.catergory__right__top, .catergory__right__bottom {
+    width: 100%;
+    /* height: 50%; */
+}
+.catergory__left__top .bg-image,
+.catergory__right__top .bg-image, 
+.catergory__right__bottom .bg-image{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.catergory__left__top .bg-image{
+    background-image: url(https://lustria.g5plus.net/wp-content/uploads/2019/04/Category-01.jpg);
+}
+.catergory__left__top {
+    height: 570px;
+}
+.catergory__right__top {
+    height: 40%;
+}
+.catergory__right__bottom {
+    height: 60%;
+}
+.catergory__left__bottom.bottom1 .bg-image {
+    background-image: url(https://lustria.g5plus.net/wp-content/uploads/2019/04/Category-03.jpg);
+    height: 255px;
+}
+.catergory__left__bottom.bottom2 .bg-image {
+    background-image: url(https://lustria.g5plus.net/wp-content/uploads/2019/05/bg-category-30.jpg);
+    height: 255px;
+}
+.catergory__right__top .bg-image{
+    background-image: url(https://lustria.g5plus.net/wp-content/uploads/2019/04/Category-06.jpg);
+}
+.catergory__right__bottom .bg-image{
+    background-image: url(https://lustria.g5plus.net/wp-content/uploads/2019/04/Category-05.jpg);
+}
+.new-summer-collection .title {
+    text-align: center;
+}
+.new-summer-collection .title div:first-child span {
+    font-size: 17px;
+    color: #7fa15a;
+}
+.new-summer-collection .title div:last-child span {
+    font-size: 40px;
+    color: #333333;
+}
+
+.new-summer-collection__show-all div a {
+    color: #333;
+    background-color: transparent;
+    padding: 21px 50px;
+    border: 1px solid #ccc;
+    list-style: none;
+}
+.new-summer-collection__show-all div a:hover {
+    text-decoration: none;
 }
