@@ -1,6 +1,13 @@
 body {
     font-family: 'Pontano Sans', sans-serif;
 }
+li, a {
+    color: unset;
+}
+a:hover {
+    text-decoration: none;
+    color: #7FA159;
+}
 .main-header {
     width: 100%;
 }
