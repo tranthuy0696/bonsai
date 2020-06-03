@@ -1,0 +1,51 @@
+ul, li {
+    margin: 0;
+    padding: 0;
+}
+.wrapper-content .title {
+    height: 80px;
+    align-items: center;
+}
+.wrapper-content .title div:first-child p {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+.wrapper-content .title ul li {
+    list-style: none;
+    position: relative;
+}
+.wrapper-content .title ul li a {
+    list-style: none;
+    text-decoration: none;
+    color: #333333;
+}
+.wrapper-content .title ul li.active a{
+    color: #000;
+    font-weight: 700;
+}
+.wrapper-content .title ul li a:hover {
+    text-decoration: none;
+}
+.wrapper-content .title ul li:not(:last-child)::after {
+    content: '>';
+    color: #333333;
+    padding: 0 10px;
+}
+.table td, .table th {
+    vertical-align: baseline !important;
+}
+table tbody tr td img {
+    width: 85px;
+}
+
+footer.fixed {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.quantity-inner {
+    width: 170px;
+}
