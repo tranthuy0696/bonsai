@@ -448,3 +448,11 @@ body {
 .new-summer-collection__show-all div a:hover {
     text-decoration: none;
 }
+.footer {
+    background-color: #f6f6f6;
+}
+.footer div p.title {
+    color: #7fa15a;
+    font-size: 20px;
+    font-weight: bold;
+}
