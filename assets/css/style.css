@@ -4,6 +4,9 @@ body {
 li, a {
     color: unset;
 }
+li {
+    list-style: none;
+}
 a:hover {
     text-decoration: none;
     color: #7FA159;
@@ -101,4 +104,17 @@ footer div p.title {
     color: #7fa15a;
     font-size: 20px;
     font-weight: bold;
+}
+.sub-categories img {
+    width: 100%;
+    height: 210px;
+}
+.sub-categories {
+    position: absolute;
+    width: 100%;
+    z-index: 1000000;
+    background: #fff;
+    top: 200px;
+    display: none;
+    /* visibility: hidden; */
 }

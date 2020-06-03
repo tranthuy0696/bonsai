@@ -361,7 +361,9 @@
 }
 .catergory__left__top .bg-image,
 .catergory__right__top .bg-image, 
-.catergory__right__bottom .bg-image{
+.catergory__right__bottom .bg-image,
+.catergory__left__bottom.bottom1 .bg-image,
+.catergory__left__bottom.bottom2 .bg-image {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
