@@ -1,0 +1,104 @@
+.blog {
+    width: 100%;
+}
+.blog .main-image {
+    width: 100%;
+}
+.blog .main-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+}
+.wrapper-content .page-title {
+    height: 80px;
+    align-items: center;
+}
+.wrapper-content .page-title div:first-child p {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+.wrapper-content .page-title ul li {
+    list-style: none;
+    position: relative;
+}
+.wrapper-content .page-title ul li a {
+    list-style: none;
+    text-decoration: none;
+    color: #333333;
+}
+.wrapper-content .page-title ul li.active a{
+    color: #000;
+    font-weight: 700;
+}
+.wrapper-content .page-title ul li a:hover {
+    text-decoration: none;
+}
+.wrapper-content .page-title ul li:not(:last-child)::after {
+    content: '>';
+    color: #333333;
+    padding: 0 10px;
+}
+.blog-main-info .row > div {
+    width: 100%;
+    
+}
+.blog-main-info .main-image {
+    width: 100%;
+}
+.blog-main-info .main-image img{
+    width: 100%;
+}
+.blog-main-info .other-image {
+    width: 100%;
+}
+
+.blog-main-info .other-image ul {
+    width: 100%;
+}
+.blog-main-info .other-image ul li a{
+    width: 100%;
+}
+.blog-main-info .other-image ul li a img{
+    width: 100%;
+}
+
+.input-group {
+    width: 170px;
+}
+.categories-list {
+    width: 100%;
+}
+.categories-list > div {
+    padding: 10px 0px;
+}
+.categories-list > span:first-child {
+    text-align: left;
+}
+.categories-list > span:last-child {
+    text-align: right;
+}
+.blog-main-info .action {
+    opacity: 0.7;
+}
+
+.blog-main-info .blog {
+    padding: 20px 0px;
+}
+.blog-description {
+    letter-spacing: 1px;
+}
+.blog-description h2 {
+    font-weight: bold;
+}
+.blog-main-info .related-blogs > div{
+    padding: 10px 0px;
+}
+.blog-main-info .related-blogs > div i {
+    padding-right: 5px;
+}

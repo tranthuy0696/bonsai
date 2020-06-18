@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog List</title>
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Pontano+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/blog-detail.css">
+    <!-- javascript bootsrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- https://lustria.g5plus.net/home-03/ -->
+    <div>
+        <header class="main-header">
+            <div class="top-bar">
+                <div class="top-bar__row container">
+                    <div class="top-bar__row__left">
+                        <span>
+                            <i class="fab fa-facebook-f"></i>
+                        </span>
+                        <span>
+                            <i class="fab fa-instagram"></i>
+                        </span>
+                        <span>
+                            <i class="fab fa-twitter"></i>
+                        </span>
+                        <span>
+                            <i class="fab fa-youtube"></i>
+                        </span>
+                    </div>
+                    <div class="top-bar__row__right d-flex">
+                        <div class="top-bar__row__right__item">
+                            <span>
+                                USD
+                                <i class="fas fa-chevron-down"></i>
+                            </span>
+                        </div>
+                        <div class="top-bar__row__right__item">
+                            <span>
+                                EN
+                                <i class="fas fa-chevron-down"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-sticky-wrapper">
+                <div class="header-sticky-wrapper__row container align-items-center">
+                    <div class="header-sticky-wrapper__row__logo">
+                        <a>
+                            <img src="https://lustria.g5plus.net/wp-content/uploads/2019/05/logo@2x.png" />
+                        </a>
+                    </div>
+                    <nav class="header-sticky-wrapper__primary-menu d-flex align-items-center">
+                        <div class="header-sticky-wrapper__primary-menu__inner align-items-center">
+                            <ul
+                                class="header-sticky-wrapper__primary-menu__inner__left d-flex align-items-center justify-content-around">
+                                <li>
+                                    <a href="index.html">
+                                        <span>
+                                            Home
+                                        </span>
+                                    </a>
+                                </li>
+                                <!-- <li>
+                                        <a>
+                                            <span>
+                                                Shop
+                                                <i class="fas fa-chevron-down"></i>
+                                            </span>
+                                        </a>
+                                    </li> -->
+                                <li class="menu__all-categories">
+                                    <a>
+                                        <span>
+                                            All Categories
+                                            <i class="fas fa-chevron-down"></i>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="blog-list.html">
+                                        <span>
+                                            Blog
+                                            <!-- <i class="fas fa-chevron-down"></i> -->
+                                        </span>
+                                    </a>
+                                </li>
+                                <!-- <li>
+                                        <a>
+                                            <span>
+                                                Pages
+                                                <i class="fas fa-chevron-down"></i>
+                                            </span>
+                                        </a>
+                                    </li> -->
+                                <li>
+                                    <a>
+                                        <span>
+                                            About Us
+                                            <i class="fas fa-chevron-down"></i>
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul
+                                class="header-sticky-wrapper__primary-menu__inner__right d-flex align-items-center justify-content-between">
+                                <li>
+                                    <a>
+                                        <i class="fas fa-search"></i>
+                                    </a>
+                                </li>
+                                <li class="wishlist">
+                                    <a>
+                                        <i class="far fa-heart"></i>
+                                        <span class="wishlist-count">0</span>
+                                    </a>
+                                </li>
+                                <li class="cart">
+                                    <a href="cart.html">
+                                        <i class="fas fa-shopping-cart"></i>
+                                        <span class="cart-count">0</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+
+            </div>
+        </header>
+        <div class="wrapper-content">
+            <div class="page-title container d-flex justify-content-between">
+                <div>
+                    <p>Blog</p>
+                </div>
+                <div>
+                    <ul class="d-flex">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="active"><a href="#">Shop</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="product container pb-5">
+                <div class="blog-main-info">
+                    <div class="row">
+                        <div class="col-md-9 col-sm-12">
+                            <div class="blog">
+                                <div class="main-image">
+                                    <a>
+                                        <img src="https://lustria.g5plus.net/wp-content/uploads/2018/12/blog-03.jpg">
+                                    </a>
+                                </div>
+                                <div class="title pt-3">
+                                    <h4>
+                                        <a title="Plants That Love the Shade" href="#">
+                                            Plants That Love the Shade
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div class="action pb-3">
+                                    <span class="pr-4">
+                                        <i class="fa fa-eye" aria-hidden="true"></i> 167
+                                    </span>
+                                    <span>
+                                        <i class="fa fa-comments" aria-hidden="true"></i> 0
+                                    </span>
+                                </div>
+                                <div class="blog-description">
+                                    <p>The goal of this new editor is to make adding rich content to WordPress simple
+                                        and enjoyable. This whole post is composed of <em>pieces of
+                                            content</em>—somewhat similar to LEGO bricks—that you can move around and
+                                        interact with. Move your cursor around and you’ll notice the different blocks
+                                        light up with outlines and arrows. Press the arrows to reposition blocks
+                                        quickly, without fearing about losing things in the process of copying and
+                                        pasting.
+                                    </p>
+                                    <p>What you are reading now is a <strong>text block</strong> the most basic block of
+                                        all. The text block has its own controls to be moved freely around the post…
+                                    </p>
+                                    <p style="text-align:right">… like this one, which is right aligned.</p>
+                                    <p>Headings are separate blocks as well, which helps with the outline and
+                                        organization of your content.</p>
+                                    <h2>A Picture is Worth a Thousand Words</h2>
+                                    <p>Handling images and media with the utmost care is a primary focus of the new
+                                        editor. Hopefully, you’ll find aspects of adding captions or going full-width
+                                        with your pictures much easier and robust than before.
+                                    </p>
+                                    <div style="background-image:url(https://lustria.g5plus.net/wp-content/uploads/2018/12/single-blog-01.jpg);height: 400px;
+                                        background-position: center;"
+                                        class="d-flex justify-content-center align-items-center">
+                                        <p style="font-size: 25px; color: #fff;">Of Mountains &amp; Printing Presses</p>
+
+                                    </div>
+                                    <p></p>
+                                    <p>Try selecting and removing or editing the caption, now you don’t have to be
+                                        careful about selecting the image or other text by mistake and ruining the
+                                        presentation.
+                                    </p>
+                                    <h2>The <em>Inserter</em> Tool</h2>
+                                    <p>Imagine everything that WordPress can do is available to you quickly and in the
+                                        same place on the interface. No need to figure out HTML tags, classes, or
+                                        remember complicated shortcode syntax. That’s the spirit behind the inserter—the
+                                        <code>(+)</code> button you’ll see around the editor—which allows you to browse
+                                        all available content blocks and add them into your post. Plugins and themes are
+                                        able to register their own, opening up all sort of possibilities for rich
+                                        editing and publishing.
+                                    </p>
+                                    <p>Go give it a try, you may discover things WordPress can already add into your
+                                        posts that you didn’t know about. Here’s a short list of what you can currently
+                                        find there:</p>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-12 related-blogs">
+                            <h4>Recent posts</h4>
+                            <hr>
+                            <div>
+                                <span>
+                                    <a href="#"><i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                        How to Plant a Succulent
+                                    </a>
+                                </span>
+                            </div>
+                            <div>
+                                <span>
+                                    <a href="#"><i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                        How to Plant a Succulent
+                                    </a>
+                                </span>
+                            </div>
+                            <div>
+                                <span>
+                                    <a href="#"><i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                        How to Plant a Succulent
+                                    </a>
+                                </span>
+                            </div>
+                            <div>
+                                <span>
+                                    <a href="#"><i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                        How to Plant a Succulent
+                                    </a>
+                                </span>
+                            </div>
+                            <div>
+                                <span>
+                                    <a href="#"><i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                        How to Plant a Succulent
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container py-5">
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <img src="https://lustria.g5plus.net/wp-content/uploads/2019/05/logo.png">
+                    </div>
+                    <div>
+                        <p class="title"><span class="pr-2"><i class="fas fa-phone"></i></span> Phone:</p>
+                        <span class="ib-sub-title ib-sub-title">
+                            Mobile (+00) 987 877 821 <br> Fax 678 912 1289 121
+                        </span>
+                    </div>
+                    <div>
+                        <p class="title"><span class="pr-2"><i class="fas fa-home"></i></span>Address:</p>
+                        <span class="ib-sub-title ib-sub-title">
+                            No 40 Baria Sreet 15/2 NewYork <br> City, NY, United States.
+                        </span>
+                    </div>
+                    <div>
+                        <p class="title"><span class="pr-2"><i class="far fa-envelope"></i></span>Email:</p>
+                        <span class="ib-sub-title ib-sub-title">
+                            contact@lustriauk.com <br> contactlustria@gmal.com.
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+    </div>
+    <script src="assets/js/bootstrap-input-spinner.js.js"></script>
+    <script>
+        $(document).ready(function () {
+            //neo footer xuống bottom nếu nội dung file ngắn hơn cửa sổ
+            $(".quantity").inputSpinner();
+        });
+    </script>
+    <script>
+        $("document").ready(function () {
+            // neo menu len top khi scroll
+            let num = $('.header-sticky-wrapper').offset().top;
+            $(window).bind('scroll', function () {
+                if ($(window).scrollTop() > num) {
+                    $('.header-sticky-wrapper').addClass('fixed-sticky');
+                }
+                else {
+                    num = $('.header-sticky-wrapper').offset().top;
+                    $('.header-sticky-wrapper').removeClass('fixed-sticky');
+                }
+            });
+            $('.menu__all-categories').click(function () {
+                $(".sub-categories").slideToggle();
+            });
+        })
+    </script>
+</body>
+
+</html>

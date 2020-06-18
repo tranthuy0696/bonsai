@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product List</title>
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Pontano+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/product.css">
+    <!-- javascript bootsrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- https://lustria.g5plus.net/home-03/ -->
+    <div>
+        <header class="main-header">
+            <div class="top-bar">
+                <div class="top-bar__row container">
+                    <div class="top-bar__row__left">
+                        <span>
+                            <i class="fab fa-facebook-f"></i>
+                        </span>
+                        <span>
+                            <i class="fab fa-instagram"></i>
+                        </span>
+                        <span>
+                            <i class="fab fa-twitter"></i>
+                        </span>
+                        <span>
+                            <i class="fab fa-youtube"></i>
+                        </span>
+                    </div>
+                    <div class="top-bar__row__right d-flex">
+                        <div class="top-bar__row__right__item">
+                            <span>
+                                USD
+                                <i class="fas fa-chevron-down"></i>
+                            </span>
+                        </div>
+                        <div class="top-bar__row__right__item">
+                            <span>
+                                EN
+                                <i class="fas fa-chevron-down"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-sticky-wrapper">
+                <div class="header-sticky-wrapper__row container align-items-center">
+                    <div class="header-sticky-wrapper__row__logo">
+                        <a>
+                            <img src="https://lustria.g5plus.net/wp-content/uploads/2019/05/logo@2x.png" />
+                        </a>
+                    </div>
+                    <nav class="header-sticky-wrapper__primary-menu d-flex align-items-center">
+                        <div class="header-sticky-wrapper__primary-menu__inner align-items-center">
+                            <ul
+                                class="header-sticky-wrapper__primary-menu__inner__left d-flex align-items-center justify-content-around">
+                                <li>
+                                    <a href="index.html">
+                                        <span>
+                                            Home
+                                        </span>
+                                    </a>
+                                </li>
+                                <!-- <li>
+                                        <a>
+                                            <span>
+                                                Shop
+                                                <i class="fas fa-chevron-down"></i>
+                                            </span>
+                                        </a>
+                                    </li> -->
+                                <li class="menu__all-categories">
+                                    <a>
+                                        <span>
+                                            All Categories
+                                            <i class="fas fa-chevron-down"></i>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="blog-list.html">
+                                        <span>
+                                            Blog
+                                            <!-- <i class="fas fa-chevron-down"></i> -->
+                                        </span>
+                                    </a>
+                                </li>
+                                <!-- <li>
+                                        <a>
+                                            <span>
+                                                Pages
+                                                <i class="fas fa-chevron-down"></i>
+                                            </span>
+                                        </a>
+                                    </li> -->
+                                <li>
+                                    <a>
+                                        <span>
+                                            About Us
+                                            <i class="fas fa-chevron-down"></i>
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul
+                                class="header-sticky-wrapper__primary-menu__inner__right d-flex align-items-center justify-content-between">
+                                <li>
+                                    <a>
+                                        <i class="fas fa-search"></i>
+                                    </a>
+                                </li>
+                                <li class="wishlist">
+                                    <a>
+                                        <i class="far fa-heart"></i>
+                                        <span class="wishlist-count">0</span>
+                                    </a>
+                                </li>
+                                <li class="cart">
+                                    <a href="cart.html">
+                                        <i class="fas fa-shopping-cart"></i>
+                                        <span class="cart-count">0</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+
+            </div>
+        </header>
+        <div class="wrapper-content">
+            <div class="title container d-flex justify-content-between">
+                <div>
+                    <p>Shop</p>
+                </div>
+                <div>
+                    <ul class="d-flex">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="active"><a href="#">Shop</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="product container">
+                <div class="product-main-info">
+                    <div class="row">
+                        <div class="col-md-9 col-sm-12">
+                            <div class="row">
+                                <div class="wrapper-content__primary__product__list d-flex flex-wrap">
+                                    <div class="col-md-3 product">
+                                        <div class="product-image">
+                                            <div class="product-thumb">
+                                                <a>
+                                                    <img
+                                                        src="https://lustria.g5plus.net/wp-content/uploads/2018/12/product-20-320x320.jpg">
+                                                </a>
+                                            </div>
+                                            <div class="product-flash-wrap">
+                                                <span class="on-featured product-flash">Hot</span>
+                                            </div>
+                                            <div class="product-action">
+                                                <div class="add-to-cart">
+                                                    <span>
+                                                        <i class="fas fa-shopping-cart"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="add-to-wishlist">
+                                                    <span>
+                                                        <i class="far fa-heart"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="quick-view">
+                                                    <span>
+                                                        <i class="fas fa-search"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-info">
+                                            <h4 class="product-name product-title">Aliquam furniture</h4>
+                                            <span class="price"><del><span>$85.00</span></del> $79.00</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 product">
+                                        <div class="product-image">
+                                            <div class="product-thumb">
+                                                <a>
+                                                    <img
+                                                        src="https://lustria.g5plus.net/wp-content/uploads/2018/12/product-02-320x320.jpg">
+                                                </a>
+                                            </div>
+                                            <div class="product-flash-wrap">
+                                                <span class="on-sale product-flash">Sale</span>
+                                            </div>
+                                            <div class="product-action">
+                                                <div class="add-to-cart">
+                                                    <span>
+                                                        <i class="fas fa-shopping-cart"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="add-to-wishlist">
+                                                    <span>
+                                                        <i class="far fa-heart"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="quick-view">
+                                                    <span>
+                                                        <i class="fas fa-search"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-info">
+                                            <h4 class="product-name product-title">Aliquam furniture</h4>
+                                            <span class="price"><del><span>$85.00</span></del> $79.00</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 product">
+                                        <div class="product-image">
+                                            <div class="product-thumb">
+                                                <a>
+                                                    <img
+                                                        src="https://lustria.g5plus.net/wp-content/uploads/2018/12/product-18-320x320.jpg">
+                                                </a>
+                                            </div>
+                                            <div class="product-flash-wrap">
+                                                <span class="on-sale product-flash">Sale</span>
+                                            </div>
+                                            <div class="product-action">
+                                                <div class="add-to-cart">
+                                                    <span>
+                                                        <i class="fas fa-shopping-cart"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="add-to-wishlist">
+                                                    <span>
+                                                        <i class="far fa-heart"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="quick-view">
+                                                    <span>
+                                                        <i class="fas fa-search"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-info">
+                                            <h4 class="product-name product-title">Aliquam furniture</h4>
+                                            <span class="price"><del><span>$85.00</span></del> $79.00</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 product">
+                                        <div class="product-image">
+                                            <div class="product-thumb">
+                                                <a>
+                                                    <img
+                                                        src="https://lustria.g5plus.net/wp-content/uploads/2018/12/product-17-320x320.jpg">
+                                                </a>
+                                            </div>
+                                            <div class="product-flash-wrap">
+                                                <span class="on-sale product-flash">Sale</span>
+                                            </div>
+                                            <div class="product-action">
+                                                <div class="add-to-cart">
+                                                    <span>
+                                                        <i class="fas fa-shopping-cart"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="add-to-wishlist">
+                                                    <span>
+                                                        <i class="far fa-heart"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="quick-view">
+                                                    <span>
+                                                        <i class="fas fa-search"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-info">
+                                            <h4 class="product-name product-title">Aliquam furniture</h4>
+                                            <span class="price"><del><span>$85.00</span></del> $79.00</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 product">
+                                        <div class="product-image">
+                                            <div class="product-thumb">
+                                                <a>
+                                                    <img
+                                                        src="https://lustria.g5plus.net/wp-content/uploads/2018/12/product-20-320x320.jpg">
+                                                </a>
+                                            </div>
+                                            <div class="product-flash-wrap">
+                                                <span class="on-featured product-flash">Hot</span>
+                                            </div>
+                                            <div class="product-action">
+                                                <div class="add-to-cart">
+                                                    <span>
+                                                        <i class="fas fa-shopping-cart"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="add-to-wishlist">
+                                                    <span>
+                                                        <i class="far fa-heart"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="quick-view">
+                                                    <span>
+                                                        <i class="fas fa-search"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-info">
+                                            <h4 class="product-name product-title">Aliquam furniture</h4>
+                                            <span class="price"><del><span>$85.00</span></del> $79.00</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 product">
+                                        <div class="product-image">
+                                            <div class="product-thumb">
+                                                <a>
+                                                    <img
+                                                        src="https://lustria.g5plus.net/wp-content/uploads/2018/12/product-02-320x320.jpg">
+                                                </a>
+                                            </div>
+                                            <div class="product-flash-wrap">
+                                                <span class="on-sale product-flash">Sale</span>
+                                            </div>
+                                            <div class="product-action">
+                                                <div class="add-to-cart">
+                                                    <span>
+                                                        <i class="fas fa-shopping-cart"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="add-to-wishlist">
+                                                    <span>
+                                                        <i class="far fa-heart"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="quick-view">
+                                                    <span>
+                                                        <i class="fas fa-search"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-info">
+                                            <h4 class="product-name product-title">Aliquam furniture</h4>
+                                            <span class="price"><del><span>$85.00</span></del> $79.00</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 product">
+                                        <div class="product-image">
+                                            <div class="product-thumb">
+                                                <a>
+                                                    <img
+                                                        src="https://lustria.g5plus.net/wp-content/uploads/2018/12/product-18-320x320.jpg">
+                                                </a>
+                                            </div>
+                                            <div class="product-flash-wrap">
+                                                <span class="on-sale product-flash">Sale</span>
+                                            </div>
+                                            <div class="product-action">
+                                                <div class="add-to-cart">
+                                                    <span>
+                                                        <i class="fas fa-shopping-cart"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="add-to-wishlist">
+                                                    <span>
+                                                        <i class="far fa-heart"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="quick-view">
+                                                    <span>
+                                                        <i class="fas fa-search"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-info">
+                                            <h4 class="product-name product-title">Aliquam furniture</h4>
+                                            <span class="price"><del><span>$85.00</span></del> $79.00</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 product">
+                                        <div class="product-image">
+                                            <div class="product-thumb">
+                                                <a>
+                                                    <img
+                                                        src="https://lustria.g5plus.net/wp-content/uploads/2018/12/product-17-320x320.jpg">
+                                                </a>
+                                            </div>
+                                            <div class="product-flash-wrap">
+                                                <span class="on-sale product-flash">Sale</span>
+                                            </div>
+                                            <div class="product-action">
+                                                <div class="add-to-cart">
+                                                    <span>
+                                                        <i class="fas fa-shopping-cart"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="add-to-wishlist">
+                                                    <span>
+                                                        <i class="far fa-heart"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="quick-view">
+                                                    <span>
+                                                        <i class="fas fa-search"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-info">
+                                            <h4 class="product-name product-title">Aliquam furniture</h4>
+                                            <span class="price"><del><span>$85.00</span></del> $79.00</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 product">
+                                        <div class="product-image">
+                                            <div class="product-thumb">
+                                                <a>
+                                                    <img
+                                                        src="https://lustria.g5plus.net/wp-content/uploads/2018/12/product-20-320x320.jpg">
+                                                </a>
+                                            </div>
+                                            <div class="product-flash-wrap">
+                                                <span class="on-featured product-flash">Hot</span>
+                                            </div>
+                                            <div class="product-action">
+                                                <div class="add-to-cart">
+                                                    <span>
+                                                        <i class="fas fa-shopping-cart"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="add-to-wishlist">
+                                                    <span>
+                                                        <i class="far fa-heart"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="quick-view">
+                                                    <span>
+                                                        <i class="fas fa-search"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-info">
+                                            <h4 class="product-name product-title">Aliquam furniture</h4>
+                                            <span class="price"><del><span>$85.00</span></del> $79.00</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 product">
+                                        <div class="product-image">
+                                            <div class="product-thumb">
+                                                <a>
+                                                    <img
+                                                        src="https://lustria.g5plus.net/wp-content/uploads/2018/12/product-02-320x320.jpg">
+                                                </a>
+                                            </div>
+                                            <div class="product-flash-wrap">
+                                                <span class="on-sale product-flash">Sale</span>
+                                            </div>
+                                            <div class="product-action">
+                                                <div class="add-to-cart">
+                                                    <span>
+                                                        <i class="fas fa-shopping-cart"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="add-to-wishlist">
+                                                    <span>
+                                                        <i class="far fa-heart"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="quick-view">
+                                                    <span>
+                                                        <i class="fas fa-search"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-info">
+                                            <h4 class="product-name product-title">Aliquam furniture</h4>
+                                            <span class="price"><del><span>$85.00</span></del> $79.00</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 product">
+                                        <div class="product-image">
+                                            <div class="product-thumb">
+                                                <a>
+                                                    <img
+                                                        src="https://lustria.g5plus.net/wp-content/uploads/2018/12/product-18-320x320.jpg">
+                                                </a>
+                                            </div>
+                                            <div class="product-flash-wrap">
+                                                <span class="on-sale product-flash">Sale</span>
+                                            </div>
+                                            <div class="product-action">
+                                                <div class="add-to-cart">
+                                                    <span>
+                                                        <i class="fas fa-shopping-cart"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="add-to-wishlist">
+                                                    <span>
+                                                        <i class="far fa-heart"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="quick-view">
+                                                    <span>
+                                                        <i class="fas fa-search"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-info">
+                                            <h4 class="product-name product-title">Aliquam furniture</h4>
+                                            <span class="price"><del><span>$85.00</span></del> $79.00</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 product">
+                                        <div class="product-image">
+                                            <div class="product-thumb">
+                                                <a>
+                                                    <img
+                                                        src="https://lustria.g5plus.net/wp-content/uploads/2018/12/product-17-320x320.jpg">
+                                                </a>
+                                            </div>
+                                            <div class="product-flash-wrap">
+                                                <span class="on-sale product-flash">Sale</span>
+                                            </div>
+                                            <div class="product-action">
+                                                <div class="add-to-cart">
+                                                    <span>
+                                                        <i class="fas fa-shopping-cart"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="add-to-wishlist">
+                                                    <span>
+                                                        <i class="far fa-heart"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="quick-view">
+                                                    <span>
+                                                        <i class="fas fa-search"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-info">
+                                            <h4 class="product-name product-title">Aliquam furniture</h4>
+                                            <span class="price"><del><span>$85.00</span></del> $79.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-12">
+                            <div class="product-title">
+                                <h3>Categories</h3>
+                                <hr>
+                            </div>
+                            <div class="categories-list">
+                                <div class="d-flex justify-content-between">
+                                    <span>House Plants</span>
+                                    <span>(8)</span>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <span>Potter Plants</span>
+                                    <span>(8)</span>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <span>Seeds</span>
+                                    <span>(8)</span>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <span>Small Plants</span>
+                                    <span>(8)</span>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <span>Succulents</span>
+                                    <span>(8)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container py-5">
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <img src="https://lustria.g5plus.net/wp-content/uploads/2019/05/logo.png">
+                    </div>
+                    <div>
+                        <p class="title"><span class="pr-2"><i class="fas fa-phone"></i></span> Phone:</p>
+                        <span class="ib-sub-title ib-sub-title">
+                            Mobile (+00) 987 877 821 <br> Fax 678 912 1289 121
+                        </span>
+                    </div>
+                    <div>
+                        <p class="title"><span class="pr-2"><i class="fas fa-home"></i></span>Address:</p>
+                        <span class="ib-sub-title ib-sub-title">
+                            No 40 Baria Sreet 15/2 NewYork <br> City, NY, United States.
+                        </span>
+                    </div>
+                    <div>
+                        <p class="title"><span class="pr-2"><i class="far fa-envelope"></i></span>Email:</p>
+                        <span class="ib-sub-title ib-sub-title">
+                            contact@lustriauk.com <br> contactlustria@gmal.com.
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+    </div>
+    <script src="assets/js/bootstrap-input-spinner.js.js"></script>
+    <script>
+        $(document).ready(function () {
+            //neo footer xuống bottom nếu nội dung file ngắn hơn cửa sổ
+            $(".quantity").inputSpinner();
+        });
+    </script>
+    <script>
+        $("document").ready(function(){
+            // neo menu len top khi scroll
+            let num = $('.header-sticky-wrapper').offset().top;
+            $(window).bind('scroll', function() {
+                if ($(window).scrollTop() > num) {
+                    $('.header-sticky-wrapper').addClass('fixed-sticky');
+                }
+                else {
+                    num = $('.header-sticky-wrapper').offset().top;
+                    $('.header-sticky-wrapper').removeClass('fixed-sticky');
+                }
+            });
+            $('.menu__all-categories').click(function(){
+                $(".sub-categories").slideToggle();
+            });
+        })
+    </script>
+</body>
+
+</html>
