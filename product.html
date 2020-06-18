@@ -186,7 +186,7 @@
                             <div class="product-title">
                                 <h3>Aliquam furniture</h3>
                             </div>
-                            <p class="price">
+                            <p class="price" style="font-size: 20px;">
                                 <del><span>$85.00</span></del>
                                 <span>$79.00</span>
                             </p>
@@ -456,6 +456,24 @@
             //neo footer xuống bottom nếu nội dung file ngắn hơn cửa sổ
             $(".quantity").inputSpinner();
         });
+    </script>
+    <script>
+        $("document").ready(function(){
+            // neo menu len top khi scroll
+            let num = $('.header-sticky-wrapper').offset().top;
+            $(window).bind('scroll', function() {
+                if ($(window).scrollTop() > num) {
+                    $('.header-sticky-wrapper').addClass('fixed-sticky');
+                }
+                else {
+                    num = $('.header-sticky-wrapper').offset().top;
+                    $('.header-sticky-wrapper').removeClass('fixed-sticky');
+                }
+            });
+            $('.menu__all-categories').click(function(){
+                $(".sub-categories").slideToggle();
+            });
+        })
     </script>
 </body>
 

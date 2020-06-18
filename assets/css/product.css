@@ -68,12 +68,21 @@ ul, li {
 .categories-list > span:last-child {
     text-align: right;
 }
+.cart button.add:hover {
+    background-color:#fff;
+    color: #000;
+    border: 1px solid #7fa15a;
+}
 .cart button.add {
     width: 200px;
     height: 64px;
     background-color: #7fa15a;
     color: #fff;
     font-size: 18px;
+}
+.cart button.wishlist:hover {
+    background-color: #7fa15a;
+    color: #fff;
 }
 .cart button.wishlist {
     width: 64px;
