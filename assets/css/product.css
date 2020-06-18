@@ -1,0 +1,86 @@
+ul, li {
+    margin: 0;
+    padding: 0;
+}
+.wrapper-content .title {
+    height: 80px;
+    align-items: center;
+}
+.wrapper-content .title div:first-child p {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+.wrapper-content .title ul li {
+    list-style: none;
+    position: relative;
+}
+.wrapper-content .title ul li a {
+    list-style: none;
+    text-decoration: none;
+    color: #333333;
+}
+.wrapper-content .title ul li.active a{
+    color: #000;
+    font-weight: 700;
+}
+.wrapper-content .title ul li a:hover {
+    text-decoration: none;
+}
+.wrapper-content .title ul li:not(:last-child)::after {
+    content: '>';
+    color: #333333;
+    padding: 0 10px;
+}
+.product-main-info .row > div {
+    width: 100%;
+}
+.product-main-info .main-image {
+    width: 100%;
+}
+.product-main-info .main-image img{
+    width: 100%;
+}
+.product-main-info .other-image {
+    width: 100%;
+}
+
+.product-main-info .other-image ul {
+    width: 100%;
+}
+.product-main-info .other-image ul li a{
+    width: 100%;
+}
+.product-main-info .other-image ul li a img{
+    width: 100%;
+}
+
+.input-group {
+    width: 170px;
+}
+.categories-list {
+    width: 100%;
+}
+.categories-list > span:first-child {
+    text-align: left;
+}
+.categories-list > span:last-child {
+    text-align: right;
+}
+.cart button.add {
+    width: 200px;
+    height: 64px;
+    background-color: #7fa15a;
+    color: #fff;
+    font-size: 18px;
+}
+.cart button.wishlist {
+    width: 64px;
+    height: 64px;
+    font-size: 18px;
+    border: 1px solid #7fa15a;
+}
+.more-info {
+    height: 100px;
+}

@@ -283,7 +283,13 @@
             }
             $(".quantity").inputSpinner();
             $('.menu__all-categories').hover(function(){
-                $('.sub-categories').slideToggle();
+                if ($('.sub-categories').is(':hover')) {
+                    $('.sub-categories').slideDown();
+                } else if ($('.menu__all-categories').is(':hover')) {
+                    $('.sub-categories').slideDown();
+                } else {
+                    $('.sub-categories').slideUp();
+                }
             });
             $('.sub-categories').on("mouseover", function () {
                 console.log('click')
