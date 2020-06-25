@@ -1,0 +1,62 @@
+.ib-has-sub-title {
+    text-align: center;
+}
+.ib-shape {
+    width: 100%;
+}
+.info-box-title {
+    font-weight: bold;
+}
+.info-box-title:hover {
+    color: #7fa15a!important;
+}
+.ib-sub-title {
+    font-size: 17px;
+    color: #777777;
+}
+.space-height {
+    margin: 100px 0px;
+}
+
+.wrapper-content .title {
+    height: 80px;
+    align-items: center;
+}
+.wrapper-content .title div:first-child p {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+.wrapper-content .title ul li {
+    list-style: none;
+    position: relative;
+}
+.wrapper-content .title ul li a {
+    list-style: none;
+    text-decoration: none;
+    color: #333333;
+}
+.wrapper-content .title ul li.active a{
+    color: #000;
+    font-weight: 700;
+}
+.wrapper-content .title ul li a:hover {
+    text-decoration: none;
+}
+.wrapper-content .title ul li:not(:last-child)::after {
+    content: '>';
+    color: #333333;
+    padding: 0 10px;
+}
+.more-info {
+    height: 200px;
+    background-color: #F9F9F9;
+    margin: 100px 0px;
+}
+.more-info .row > div:not(:last-child) .ib-content-wrap {
+    border-right: 1px solid #777777;
+}
+.video {
+    margin-bottom: 100px;
+}

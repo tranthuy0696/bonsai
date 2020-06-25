@@ -102,7 +102,7 @@
                                         </a>
                                     </li> -->
                                     <li>
-                                        <a>
+                                        <a href="about-us.html">
                                             <span>
                                                 About Us
                                                 <i class="fas fa-chevron-down"></i>
@@ -754,23 +754,7 @@
                 </div>
             </footer>
         </div>
-        <script>
-            $("document").ready(function(){
-                // neo menu len top khi scroll
-                let num = $('.header-sticky-wrapper').offset().top;
-                $(window).bind('scroll', function() {
-                    if ($(window).scrollTop() > num) {
-                        $('.header-sticky-wrapper').addClass('fixed-sticky');
-                    }
-                    else {
-                        num = $('.header-sticky-wrapper').offset().top;
-                        $('.header-sticky-wrapper').removeClass('fixed-sticky');
-                    }
-                });
-                $('.menu__all-categories').click(function(){
-                    $(".sub-categories").slideToggle();
-                });
-            })
+        <script src="assets/js/fix-top-header.js">
         </script>
     </body>
 
