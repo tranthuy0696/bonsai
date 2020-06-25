@@ -141,7 +141,7 @@
     height: 50%;
 }
 .wrapper-content__primary__banner__right__top .bg-image{
-    background-image: url(https://lustria.g5plus.net/wp-content/uploads/2019/04/banner-05.jpg);
+    background-image: url('../images/banner-05.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -149,7 +149,7 @@
     height: 100%;
 }
 .wrapper-content__primary__banner__right__bottom .bg-image {
-    background: #f8f8f8 url(https://lustria.g5plus.net/wp-content/uploads/2018/12/banner-02.jpg?id=1277);
+    background: #f8f8f8 url("../images/banner-02.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -371,7 +371,7 @@
     height: 100%;
 }
 .catergory__left__top .bg-image{
-    background-image: url(https://lustria.g5plus.net/wp-content/uploads/2019/04/Category-01.jpg);
+    background-image: url("../images/Category-01.jpg");
 }
 .catergory__left__top {
     height: 570px;
@@ -383,18 +383,18 @@
     height: 60%;
 }
 .catergory__left__bottom.bottom1 .bg-image {
-    background-image: url(https://lustria.g5plus.net/wp-content/uploads/2019/04/Category-03.jpg);
+    background-image: url("../images/Category-03.jpg");
     height: 255px;
 }
 .catergory__left__bottom.bottom2 .bg-image {
-    background-image: url(https://lustria.g5plus.net/wp-content/uploads/2019/05/bg-category-30.jpg);
+    background-image: url("../images/bg-category-30.jpg");
     height: 255px;
 }
 .catergory__right__top .bg-image{
-    background-image: url(https://lustria.g5plus.net/wp-content/uploads/2019/04/Category-06.jpg);
+    background-image: url("../images/Category-06.jpg");
 }
 .catergory__right__bottom .bg-image{
-    background-image: url(https://lustria.g5plus.net/wp-content/uploads/2019/04/Category-05.jpg);
+    background-image: url("../images/Category-05.jpg");
 }
 .new-summer-collection .title {
     text-align: center;
