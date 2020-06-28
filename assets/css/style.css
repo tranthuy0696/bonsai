@@ -134,3 +134,8 @@ footer div p.title {
     top: 80px;
     position: fixed;
 }
+
+.category-active {
+    color: #7FA161;
+    font-weight: bold;
+}

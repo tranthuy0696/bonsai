@@ -218,6 +218,7 @@
     color: #C8C8C8;
     font-weight: bold;
     font-size: 30px;
+    cursor: pointer;
 }
 
 .wrapper-content__primary__product__tabs ul li.active {

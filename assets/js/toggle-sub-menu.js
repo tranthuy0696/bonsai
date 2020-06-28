@@ -1,8 +1,8 @@
 $("document").ready(function(){
       //neo footer xuống bottom nếu nội dung file ngắn hơn cửa sổ
-      if ($(document).height() > ($('footer').offset().top + $('footer').height())) {
-        $('footer').addClass('fixed');
-    }
+    //   if ($(document).height() > ($('footer').offset().top + $('footer').height())) {
+    //     $('footer').addClass('fixed');
+    // }
     $('.menu__all-categories').on("mouseenter", function(){
         $('.sub-categories').slideDown("slow");
     });
