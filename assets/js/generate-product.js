@@ -214,8 +214,8 @@ const generateProductDetail = (product) => {
             <h3>${product.name}</h3>
         </div>
         <p class="price" style="font-size: 20px;">
-            <del><span>$85.00</span></del>
-            <span>$79.00</span>
+            ${product.priceSale ? `<del><span>$${product.price}.00</span></del>` : ''}
+            <span>$${product.priceSale || product.price}.00</span>
         </p>
         <div class="product-description">
             <p>
