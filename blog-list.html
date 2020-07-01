@@ -158,106 +158,7 @@
             <div class="product container pb-5">
                 <div class="blog-main-info">
                     <div class="row">
-                        <div class="col-md-9 col-sm-12">
-                            <div class="blog">
-                                <div class="main-image">
-                                    <a href="blog-detail.html">
-                                        <img src="https://lustria.g5plus.net/wp-content/uploads/2018/12/blog-14.jpg">
-                                    </a>
-                                </div>
-                                <div class="title pt-3">
-                                    <h4>
-                                        <a title="Plants That Love the Shade" href="blog-detail.html">
-                                            Plants That Love the Shade
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div class="action pb-3">
-                                    <span class="pr-4">
-                                        <i class="fa fa-eye" aria-hidden="true"></i> 167
-                                    </span>
-                                    <span>
-                                        <i class="fa fa-comments" aria-hidden="true"></i> 0
-                                    </span>
-                                </div>
-                                <div class="short-description">
-                                    <p>
-                                        The goal of this new editor is to make adding rich content to WordPress simple
-                                        and enjoyable. This whole post is composed of pieces of content—somewhat similar
-                                        to LEGO bricks—that you can move around and interact with. Move your cursor
-                                        around and you’ll notice the different blocks light up with outlines and arrows.
-                                        Press the […]
-                                    </p>
-                                </div>
-                               
-                                <hr>
-                            </div>
-                            <div class="blog">
-                                <div class="main-image">
-                                    <a href="blog-detail.html">
-                                        <img src="https://lustria.g5plus.net/wp-content/uploads/2018/12/blog-01.jpg">
-                                    </a>
-                                </div>
-                                <div class="title pt-3">
-                                    <h4>
-                                        <a title="Plants That Love the Shade" href="blog-detail.html">
-                                            Plants That Love the Shade
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div class="action pb-3">
-                                    <span class="pr-4">
-                                        <i class="fa fa-eye" aria-hidden="true"></i> 167
-                                    </span>
-                                    <span>
-                                        <i class="fa fa-comments" aria-hidden="true"></i> 0
-                                    </span>
-                                </div>
-                                <div class="short-description">
-                                    <p>
-                                        The goal of this new editor is to make adding rich content to WordPress simple
-                                        and enjoyable. This whole post is composed of pieces of content—somewhat similar
-                                        to LEGO bricks—that you can move around and interact with. Move your cursor
-                                        around and you’ll notice the different blocks light up with outlines and arrows.
-                                        Press the […]
-                                    </p>
-                                </div>
-                               
-                                <hr>
-                            </div>
-                            <div class="blog">
-                                <div class="main-image">
-                                    <a href="blog-detail.html">
-                                        <img src="https://lustria.g5plus.net/wp-content/uploads/2018/12/blog-03.jpg">
-                                    </a>
-                                </div>
-                                <div class="title pt-3">
-                                    <h4>
-                                        <a title="Plants That Love the Shade" href="blog-detail.html">
-                                            Plants That Love the Shade
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div class="action pb-3">
-                                    <span class="pr-4">
-                                        <i class="fa fa-eye" aria-hidden="true"></i> 167
-                                    </span>
-                                    <span>
-                                        <i class="fa fa-comments" aria-hidden="true"></i> 0
-                                    </span>
-                                </div>
-                                <div class="short-description">
-                                    <p>
-                                        The goal of this new editor is to make adding rich content to WordPress simple
-                                        and enjoyable. This whole post is composed of pieces of content—somewhat similar
-                                        to LEGO bricks—that you can move around and interact with. Move your cursor
-                                        around and you’ll notice the different blocks light up with outlines and arrows.
-                                        Press the […]
-                                    </p>
-                                </div>
-                               
-                                <hr>
-                            </div>
+                        <div class="col-md-9 col-sm-12 blog-list">
                         </div>
                         <div class="col-md-3 col-sm-12">
                             <div class="product-title">
@@ -265,26 +166,6 @@
                                 <hr>
                             </div>
                             <div class="categories-list">
-                                <div class="d-flex justify-content-between">
-                                    <span>House Plants</span>
-                                    <span>(8)</span>
-                                </div>
-                                <div class="d-flex justify-content-between">
-                                    <span>Potter Plants</span>
-                                    <span>(8)</span>
-                                </div>
-                                <div class="d-flex justify-content-between">
-                                    <span>Seeds</span>
-                                    <span>(8)</span>
-                                </div>
-                                <div class="d-flex justify-content-between">
-                                    <span>Small Plants</span>
-                                    <span>(8)</span>
-                                </div>
-                                <div class="d-flex justify-content-between">
-                                    <span>Succulents</span>
-                                    <span>(8)</span>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -324,12 +205,16 @@
     <script src="assets/js/toggle-sub-menu.js"></script>
     <script src="assets/js/category.js"></script>
     <script src="assets/js/cart.js"></script>
+    <script src="assets/js/generate-product.js"></script>
+    <script src="assets/js/blog.js"></script>
     <script>
         $(document).ready(function () {
             //neo footer xuống bottom nếu nội dung file ngắn hơn cửa sổ
             $(".quantity").inputSpinner();
-            generateCategoriesSubmenu()
-            displayCartQuantity()
+            generateCategoriesSubmenu();
+            displayCartQuantity();
+            generateCategories();
+            generateBlogList();
         });
     </script>
     <script src="assets/js/fix-top-header.js"></script>

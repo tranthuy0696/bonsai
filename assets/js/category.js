@@ -75,6 +75,23 @@ $('.categories-list').html(html)
     
 }
 
+const generateCategories = () => {
+    const productList = productListMockData()
+    let html = categoriesDataFake.map(({id, name}) => {
+        const productsByCategory = productList.filter(({categoryId}) => categoryId === id)
+        return `
+        <div>
+           <a href="product-list.html?category=${id}" class="d-flex justify-content-between">
+            <span>${name}</span>
+            <span>(${productsByCategory.length})</span>
+           </a>
+        </div>
+    `
+    }).join(' ')
+$('.categories-list').html(html)
+    
+}
+
 const generateProductListByCategory = (id) => {
     let productList = productListMockData()
     productList = productList.filter(({categoryId}) => categoryId === Number(id))
