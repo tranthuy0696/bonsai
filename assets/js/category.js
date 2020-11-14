@@ -1,32 +1,32 @@
 const categoriesDataFake = [
     {
         id: 1,
-        name: 'Small Plants',
+        name: 'Cây để bàn',
         image: 'mega-menu-01'
     },
     {
         id: 2,
-        name: 'House Plants',
+        name: 'Cây thủy sinh',
         image: 'mega-menu-02'
     },
     {
         id: 3,
-        name: ' Terrariums',
+        name: ' Sen đá',
         image: 'mega-menu-03'
     },
     {
         id: 4,
-        name: ' Succulents',
+        name: ' Cây chậu treo',
         image: 'mega-menu-04'
     },
     {
         id: 5,
-        name: ' Accessories',
+        name: 'Cây ăn trái',
         image: 'mega-menu-05'
     },
     {
         id: 6,
-        name: ' Seeds',
+        name: 'Xương rồng',
         image: 'mega-menu-06'
     }
 ]

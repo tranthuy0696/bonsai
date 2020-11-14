@@ -233,7 +233,7 @@ const generateProductDetail = (product) => {
         </div>
         <hr style="width: 100%;">
         <div class="more-info">
-            <span>Category: <a href="#">Small Plants</a></span>
+            <span>Category: <a href="#">Cây cảnh để bàn</a></span>
         </div>
     </div>
 </div>

@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart</title>
+    <title>Giỏ hàng</title>
     <link rel="stylesheet" href="assets/fontawesome/css/all.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Pontano+Sans&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Pontano+Sans&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -63,7 +63,7 @@
                                 <li>
                                     <a href="index.html">
                                         <span>
-                                            Home
+                                            Trang chủ
                                         </span>
                                     </a>
                                 </li>
@@ -78,7 +78,7 @@
                                 <li class="menu__all-categories">
                                     <a>
                                         <span>
-                                            All Categories
+                                            Danh mục sản phẩm
                                             <i class="fas fa-chevron-down"></i>
                                         </span>
                                     </a>
@@ -86,7 +86,7 @@
                                 <li>
                                     <a href="blog-list.html">
                                         <span>
-                                            Blog
+                                            Tin tức
                                             <!-- <i class="fas fa-chevron-down"></i> -->
                                         </span>
                                     </a>
@@ -102,7 +102,7 @@
                                 <li>
                                     <a href="about-us.html">
                                         <span>
-                                            About Us
+                                            Giới thiệu
                                         </span>
                                     </a>
                                 </li>
@@ -136,12 +136,12 @@
         <div class="wrapper-content">
             <div class="title container d-flex justify-content-between">
                 <div>
-                    <p>Cart</p>
+                    <p>Giỏ hàng</p>
                 </div>
                 <div>
                     <ul class="d-flex">
-                        <li><a href="index.html">Home</a></li>
-                        <li class="active"><a href="#">Cart</a></li>
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li class="active"><a href="#">Giỏ hàng</a></li>
                     </ul>
                 </div>
             </div>
@@ -151,10 +151,10 @@
                       <tr>
                         <th scope="col"></th>
                         <th scope="col"></th>
-                        <th scope="col">Product</th>
-                        <th scope="col">Price</th>
-                        <th scope="col">Quantity</th>
-                        <th scope="col">Subtotal</th>
+                        <th scope="col">Sản phẩm</th>
+                        <th scope="col">Giá</th>
+                        <th scope="col">Số lượng</th>
+                        <th scope="col">Tổng cộng</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -172,13 +172,13 @@
                         <img src="assets/images/logo.png">
                     </div>
                     <div>
-                        <p class="title"><span class="pr-2"><i class="fas fa-phone"></i></span> Phone:</p>
+                        <p class="title"><span class="pr-2"><i class="fas fa-phone"></i></span> Số điện thoại:</p>
                         <span class="ib-sub-title ib-sub-title">
                             Mobile (+00) 987 877 821 <br> Fax 678 912 1289 121
                         </span>
                     </div>
                     <div>
-                        <p class="title"><span class="pr-2"><i class="fas fa-home"></i></span>Address:</p>
+                        <p class="title"><span class="pr-2"><i class="fas fa-home"></i></span>Địa chỉ:</p>
                         <span class="ib-sub-title ib-sub-title">
                             No 40 Baria Sreet 15/2 NewYork <br> City, NY, United States.
                         </span>
@@ -215,7 +215,7 @@
                 return product
             })
             if (!productList || productList.length === 0) {
-                $('.cart-content table tbody').html('<h3>Your cart is currently empty.</h3>')
+                $('.cart-content table tbody').html('<h3>Giỏ hàng của bạn không có sản phẩm.</h3>')
                 $('.cart-total').html('')
             } else {
                 const total = productList.reduce((sum, item) => {
@@ -227,11 +227,11 @@
                         <td><a class="remove" onclick=removeCart(${product.id})>X</a></td>
                         <td><a><img src="assets/images/${product.mainImage}.jpg"></a></td>
                         <td>${product.name}</td>
-                        <td>$${product.priceSale || product.price}.00</td>
+                        <td>${product.priceSale || product.price}.00</td>
                         <td>
                             <input class="quantity product_quantity" type="number" value="${product.quantity}" min="1" max="1000" step="1" size="4"/>
                         </td>
-                        <td>$${(product.priceSale || product.price) * product.quantity}.00</td>
+                        <td>${(product.priceSale || product.price) * product.quantity}.00</td>
                     </tr>
                     `
                 }).join(' ')
@@ -239,7 +239,7 @@
                 <tr>
                     <td colspan="5"></td>
                     <td>
-                        <button type="button" class="btn btn-success btn-cart" onclick="updateCart()">Update Cart</button>
+                        <button type="button" class="btn btn-success btn-cart" onclick="updateCart()">Cập nhật giỏ hàng</button>
                     </td>
                 </tr>
                 `
@@ -248,31 +248,31 @@
 
                 let cartTotal = `
                     <div class="col-md-6 col-sm-12">
-                        <h3>Cart Totals</h3>
+                        <h3>Chi tiết giỏ hàng</h3>
                         <table class="table">
                             <thead>
                                 <tr>
-                                <th scope="col">Sub Totals</th>
-                                <th scope="col">$${total}.00</th>
+                                <th scope="col">Tổng cộng</th>
+                                <th scope="col">${total}.00</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>Shipping</td>
+                                    <td>Phí giao hàng</td>
                                     <td>
-                                        <p>Free shipping</p>
-                                        <p>Shipping options will be updated during checkout.</p>
-                                        <p>Calculate shipping <i class="fa fa-motorcycle" aria-hidden="true"></i></p>
+                                        <p>Miễn phí vận chuyển</p>
+                                        <p>Tùy chọn vận chuyển sẽ được cập nhật trong quá trình thanh toán.</p>
+                                        <p>Tính toán vận chuyển <i class="fa fa-motorcycle" aria-hidden="true"></i></p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <th scope="col">Total</th>
-                                    <th scope="col">$${total}.00</th>
+                                    <th scope="col">Tổng cộng</th>
+                                    <th scope="col">${total}.00</th>
                                 </tr>
                                 <tr>
                                     <td></td>
                                     <td>
-                                        <button type="button" class="btn btn-success btn-cart">Checkout</button>
+                                        <button type="button" class="btn btn-success btn-cart">Thanh toán</button>
                                     </td>
                                 </tr>
                             </tbody>
